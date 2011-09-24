@@ -9,6 +9,7 @@ int device_iboot_mode;
 int respond_dfu_counters() {
 	if (device_iboot_mode != kDfuMode)
 		start_cli();
+	else return (-1)
 }
 
 int start_cli() {
